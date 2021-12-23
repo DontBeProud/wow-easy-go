@@ -2,7 +2,7 @@ package verification_code_rdb
 
 import (
 	"context"
-	"github.com/go-redis/redis"
+	"github.com/go-redis/redis/v8"
 	"testing"
 )
 

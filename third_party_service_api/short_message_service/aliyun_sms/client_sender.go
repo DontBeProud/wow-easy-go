@@ -60,6 +60,6 @@ func (s AliYunSMSClientSender) sendSms(PhoneNumberList []string, UpExtendCode *s
 		OutId,
 	)
 
-	client := s.GetClient()
+	client := s.AliYunSMSClientInterface.GetClient()
 	return send_sms.AliYunSmsSend(client, apiParams)
 }
